@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Hickman's site</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/timer.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="./images/main-logo.png">
+    </header>
+    <nav>
+        <div id="home"><a href="./index.html">Home</a></div>
+        <div><a href="./resources.html">Resources</a></div>
+        <div id="timer"><a href="./timer.html">Pomodoro Timer</a></div>
+    </nav>
+    <main>
+        <p>
+            The Pomodoro Technique is a productivity tool that breaks your study time into focused intervals. 
+            Traditionally, you study for <strong>25 minutes</strong> and take a short <strong>5-minute break</strong>. 
+            After several rounds, you reward yourself with a longer break. This helps reduce burnout and 
+            keeps your brain fresh while you work.
+        </p>
+
+        <section id="pomodoro">
+            <div id="timer-container">
+                <h3 id="timer-label">Study Time</h3>
+                <div id="timer-display">25:00</div>
+
+                <div id="timer-buttons">
+                    <button id="start-btn">Start</button>
+                    <button id="pause-btn">Pause</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

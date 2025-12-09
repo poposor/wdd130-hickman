@@ -1,0 +1,173 @@
+/* Font and global body styles (same as main.css) */
+@font-face {
+    font-family: "Madina";
+    src: url(./madina/Madina.otf) format("opentype");
+}
+
+body {
+    background-color: #fedd72;
+    font-family: "Madina", sans-serif;
+    margin: 0;
+}
+
+/* Paragraphs */
+p {
+    font-family: "sans-serif";
+    padding: 10px;
+    margin: 0;
+}
+
+/* Logo */
+#logo {
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+/* Navigation bar */
+nav {
+    border-radius: 15px 15px 0 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    display: flex;
+    font-size: 25px;
+    align-items: stretch;
+}
+
+a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    width: 100%;
+    height: 100%;
+}
+
+nav div {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #c82413;
+}
+
+#home {
+    border-radius: 15px 0 0 0;
+}
+
+#timer {
+    border-radius: 0 15px 0 0;
+}
+
+/* Highlight current page link */
+nav a.active {
+    text-decoration: underline;
+}
+
+nav div:hover {
+    background-color: #3f7f18;
+}
+
+/* MAIN LAYOUT FOR TIMER PAGE */
+#timer-page {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #5fb4e5;  /* blue content area like site plan */
+    min-height: 400px;
+    padding: 40px 20px;
+}
+
+/* Intro section */
+#intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px 25px;
+}
+
+#intro h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Pomodoro timer section */
+#pomodoro {
+    display: flex;
+    justify-content: center;
+}
+
+/* Timer card */
+#timer-container {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 30px 40px;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Timer label and display */
+#timer-label {
+    margin: 0 0 15px;
+    font-size: 28px;
+}
+
+#timer-display {
+    font-family: "Courier New", monospace;
+    font-size: 56px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+#timer-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#timer-buttons button {
+    flex: 1 1 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #c82413;
+    color: #ffffff;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#timer-buttons button:hover {
+    background-color: #3f7f18;
+    transform: translateY(-1px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    nav {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    #timer-page {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 30px 15px;
+    }
+
+    #timer-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
